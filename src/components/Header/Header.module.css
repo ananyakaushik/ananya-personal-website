@@ -1,0 +1,26 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Amaranth&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Gidugu&display=swap');
+
+.Header {
+    color: #f7ede2;
+    background-color: #3b5952;
+    /* background-color: #84a59d; */
+    position: relative;
+    padding: 2%;
+    height: 100px;
+    font-size: 80px;
+    font-family: 'Gidugu', sans-serif;
+
+    /* font-family: 'Notable', sans-serif; */
+    /* font-family: 'Amaranth', sans-serif; */
+}
+
+.title {
+    /* display: inline-block;
+    vertical-align: middle */
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
