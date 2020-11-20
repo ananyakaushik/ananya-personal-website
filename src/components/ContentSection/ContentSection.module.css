@@ -10,8 +10,41 @@
     background-color: #f5cac3;
 }
  
-.section {
+.pDiv {
+    height: 100%;
+    width: 60%;
+    display: inline-flex;
+    justify-content: center;
+    vertical-align: middle;
     color: #3b5952;
-    padding: 5% 10%;
-    margin: 0;
+    /* background-color: #f7ede2; */
+    background-color: white;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 20px;
+    /* margin: 0; */
+}
+
+.section {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.imgDiv {
+    height: 100%;
+    width: 40%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: #f5cac3;
+    /* margin: 0; */
+}
+
+img {
+    border-radius: 50%;
+    width: 60%;
+    display: flex;
+    /* transform: translate(0,50%); */
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import classes from './ContentSection.module.css'
+import classes from './ContentSection.module.css';
+import ananyaSXSW from '../../ananyaSXSW.jpg';
 
 class ContentSection extends Component {
     render() {
@@ -7,12 +8,15 @@ class ContentSection extends Component {
         const className = [classes.section, classes[`${ this.props.bgColor }`]].join(' ');
 
         return (
-            <div>
-                <p className={className}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+            <div style={{display: 'inline-block', height: '100%', alignContent: 'center', justifyContent:'center'}}>
+                <div className={classes.imgDiv}>
+                    <img src={ananyaSXSW} alt="Ananya" />
+                </div>
+                <div className={classes.pDiv}>
+                    <p className={className}>
+                        Hi! I'm Ananya Kaushik. This is my website, where I'm practicing my frontend skills, primarily React.js and some CSS.
+                    </p>
+                </div>
             </div>
         );
     }
