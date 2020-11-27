@@ -1,0 +1,17 @@
+.ul {
+    position: absolute;
+    right: 10%;
+    list-style: none;
+    display: inline;
+    align-items: flex-start;
+}
+
+.li {
+    display: inline;
+    padding: 5px;
+    margin: 10px
+}
+
+/* .Nav {
+    position: absolute;
+} */
