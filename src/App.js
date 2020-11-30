@@ -1,22 +1,28 @@
-import { BrowserRouter } from 'react-router-dom';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import './App.css';
-// import Header from './components/Header/Header'
-// import Footer from './components/Footer/Footer';
+
 import ContentSection from './components/ContentSection/ContentSection';
+import Books from './components/Books/Books';
+import About from './components/About/About';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        {/* <Header /> */}
         
         {/* <ContentSection bgColor="white"/>
         <ContentSection bgColor="yellow"/>
         <ContentSection bgColor="pink"/>
         <ContentSection bgColor="white"/> */}
-        <ContentSection bgColor="white"/>
+        {/* <ContentSection bgColor="white"/> */}
         
-        {/* <Footer /> */}
+        <Switch>
+          <Route path="/books" component={Books} />
+          <Route path="/about" component={About} />
+          <Route path="/" exact component={ContentSection} />
+          {/* <Route component={NoMatch}/> */}
+        </Switch>
+
       </div>
     </BrowserRouter>
   );
