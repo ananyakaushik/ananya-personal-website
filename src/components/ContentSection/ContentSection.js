@@ -16,7 +16,7 @@ class ContentSection extends Component {
                 <div style={{zIndex: 10, display: 'inline-block', height: '100%', alignContent: 'center', justifyContent:'center'}}>
                     
                     <div className={classes.imgDiv}>
-                        <img src={ananyaSXSW} alt="Ananya" />
+                        <img className={classes.sxsw} src={ananyaSXSW} alt="Ananya" />
                     </div>
                     <div className={classes.pDiv}>
                         <Navbar />
