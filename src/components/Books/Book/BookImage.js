@@ -2,6 +2,7 @@ import React from 'react';
 import plc from '../../../placeholder.png';
 import classes from './Book.module.css';
 
+// Component for the book's image
 const BookImage = (props) => {
     return(
         <div className={classes.BookImg}>

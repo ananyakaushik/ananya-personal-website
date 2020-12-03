@@ -7,6 +7,8 @@ class Books extends Component {
         return(
             <div style={{zIndex: 10, display: 'inline-block', height: '100%', width: '100%', alignContent: 'center', justifyContent:'center'}}>
                 <Navbar />
+                {/* List of Books */}
+                {/* TODO: map Book array and use info from API */}
                 <Book id="1"/>
                 <Book id="2"/>
                 <Book id="3"/>
