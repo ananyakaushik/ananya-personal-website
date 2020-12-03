@@ -1,25 +1,17 @@
 import React from 'react';
-import plc from '../../../placeholder.png';
+import BookImage from './BookImage';
+import BookDesc from './BookDesc';
 import classes from './Book.module.css';
 
 const Book = (props) => {
+    
+    const bookDescStyle = (props.id % 2 === 0) ? classes.BookDescLeft : classes.BookDescRight;
+
     return(
-        <div className={classes.bookDiv}>
-            <div className={classes.bookImg}>
-                <img src={plc} alt="image" />
-            </div>
-            <div className={classes.bookDesc}>
-                <div className={classes.listDiv}>
-                    <ul>
-                        <li>Title:</li>
-                        <li>Author: </li>
-                        <li>Goodreads Rating: </li>
-                        <li>Synopsis: </li>
-                        <li>Review: </li>
-                        <li>Add button</li>
-                    </ul>
-                </div>
-            </div>
+        <div className={classes.BookDiv}>
+            {props.id % 2 !== 0 && <BookImage />}
+            <BookDesc className={bookDescStyle} />
+            {props.id % 2 === 0 && <BookImage />}
         </div>
     )
 }

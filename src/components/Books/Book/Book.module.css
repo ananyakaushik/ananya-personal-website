@@ -1,47 +1,49 @@
-.bookDiv {
+.BookDiv {
     height: 100%;
-    min-width: 100% */
+    min-width: 100%
 }
 
-.bookImg {
+.BookImg {
     height: 100%;
     width: 40%;
     display: inline-flex;
-    align-items: center;
+    align-items: center; /* vertical within div */
     justify-content: center;
     vertical-align: middle;
     /* background-color: #f5cac3; */
 }
 
-.bookImg > img {
+.BookImg > img {
     height: 500px;
     display: flex;
+    padding: 0
 }
 
-.bookDesc {
+.BookDescLeft {
+    height: 100%;
+    width: 44%;
+    display: inline-flex;
+    vertical-align: middle;
+    padding: 8%;
+}
+
+.BookDescRight {
     height: 100%;
     width: 60%;
     display: inline-flex;
-    justify-content: left;
     vertical-align: middle;
-    /* text-align: center; */
 }
 
-.listDiv {
+.ListDiv {
     width: 60%;
     display: flex;
     vertical-align: middle;
     align-items: center;
 }
 
-.listDiv > ul {
+.ListDiv > ul {
     list-style: none!important;
     /* display: inline-block; */
     text-align: initial;
+    padding: 0
 }
-
-/* .bookDesc > li {
-    display: block!important;
-    float:left;
-    clear: left
-} */

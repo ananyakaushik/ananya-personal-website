@@ -8,17 +8,19 @@ class Navbar extends Component {
             <div>
                 <nav className={classes.Nav}>
                     <ul className={classes.ul}>
+
                         <li className={classes.li}>
                             <NavLink to="/">Home</NavLink>
                         </li>
+
                         <li className={classes.li}>
                             <NavLink to="/books">Books</NavLink>
                         </li>
+
                         <li className={classes.li}>
                             <NavLink to="/about">About Me</NavLink>
                         </li>
-                        {/* <li className={classes.li}>About Me</li>
-                        <li className={classes.li}>About Me</li> */}
+                        
                     </ul>
                 </nav>
             </div>

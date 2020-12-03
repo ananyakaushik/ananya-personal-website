@@ -11,21 +11,19 @@ class ContentSection extends Component {
         const className = [classes.section, classes[`${ this.props.bgColor }`]].join(' ');
 
         return (
-            // <div style={{position: 'relative'}}>
-                // <Navbar />
-                <div style={{zIndex: 10, display: 'inline-block', height: '100%', alignContent: 'center', justifyContent:'center'}}>
-                    
-                    <div className={classes.imgDiv}>
-                        <img className={classes.sxsw} src={ananyaSXSW} alt="Ananya" />
-                    </div>
-                    <div className={classes.pDiv}>
-                        <Navbar />
-                        <p className={className}>
-                            Hi! I'm Ananya Kaushik. This is my website, where I'm practicing my frontend skills, primarily React.js and some CSS.
-                        </p>
-                    </div>
+            <div style={{zIndex: 10, display: 'inline-block', height: '100%', alignContent: 'center', justifyContent:'center'}}>
+                
+                <div className={classes.imgDiv}>
+                    <img className={classes.sxsw} src={ananyaSXSW} alt="Ananya" />
                 </div>
-            // </div>
+                
+                <div className={classes.pDiv}>
+                    <Navbar />
+                    <p className={className}>
+                        Hi! I'm Ananya Kaushik. This is my website, where I'm practicing my frontend skills, primarily React.js and some CSS.
+                    </p>
+                </div>
+            </div>
         );
     }
 }

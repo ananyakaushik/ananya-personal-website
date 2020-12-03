@@ -7,11 +7,11 @@ class Books extends Component {
         return(
             <div style={{zIndex: 10, display: 'inline-block', height: '100%', width: '100%', alignContent: 'center', justifyContent:'center'}}>
                 <Navbar />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
-                <Book />
+                <Book id="1"/>
+                <Book id="2"/>
+                <Book id="3"/>
+                <Book id="4"/>
+                <Book id="5"/>
             </div>
         )
     }
