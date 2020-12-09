@@ -13,7 +13,6 @@ const BookDesc = (props) => {
                     <li>Goodreads Rating: </li>
                     <li>Synopsis: </li>
                     <li>Review: </li>
-                    <li>Add button</li>
                 </ul>
             </div>
         </div>
