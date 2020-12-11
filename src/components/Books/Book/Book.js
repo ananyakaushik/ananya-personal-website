@@ -7,14 +7,21 @@ import classes from './Book.module.css';
 const Book = (props) => {
     
     // alternate styling of the book's description (with its alternate positioning)
-    const bookDescStyle = (props.id % 2 === 0) ? classes.BookDescLeft : classes.BookDescRight;
+    const bookDescStyle = (props.id % 2 !== 0) ? classes.BookDescLeft : classes.BookDescRight;
 
     return(
         <div className={classes.BookDiv}>
             {/* alternate the position of the book's image */}
-            {props.id % 2 !== 0 && <BookImage />}
-            <BookDesc className={bookDescStyle} />
             {props.id % 2 === 0 && <BookImage />}
+
+            <BookDesc
+                className={bookDescStyle}
+                title={props.title}
+                author={props.author}
+                ratina={props.rating}
+                description={props.description} />
+                
+            {props.id % 2 !== 0 && <BookImage />}
         </div>
     )
 }

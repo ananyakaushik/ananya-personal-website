@@ -6,12 +6,12 @@ const BookDesc = (props) => {
     return(
         <div className={props.className}>
             <div className={classes.ListDiv}>
-                {/* List of Book's attributes, some to be filled in by the API */}
+                {/* List of Book's attributes */}
                 <ul>
-                    <li>Title:</li>
-                    <li>Author: </li>
-                    <li>Goodreads Rating: </li>
-                    <li>Synopsis: </li>
+                    <li>Title: {props.title}</li>
+                    <li>Author: {props.author}</li>
+                    <li>Goodreads Rating: {props.rating}</li>
+                    <li>Synopsis: {props.description}</li>
                     <li>Review: </li>
                 </ul>
             </div>
