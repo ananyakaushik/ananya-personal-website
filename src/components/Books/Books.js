@@ -64,6 +64,19 @@ class Books extends Component {
                 }));
             });
         });
+
+        fetch('https://www.googleapis.com/books/v1/volumes?q=isbn:0439023483')
+            .then(response => response.json())
+            .then(response => {
+                console.log(response.items[0].volumeInfo);
+                console.log(response.items[0].volumeInfo.title);
+                console.log(response.items[0].volumeInfo.publishedDate);
+                console.log(response.items[0].volumeInfo.authors[0]);
+                console.log(response.items[0].volumeInfo.categories);
+                console.log(response.items[0].volumeInfo.description);
+                console.log(response.items[0].volumeInfo.averageRating);
+            })
+            .catch(error => console.log('Error:', error));
     }
     
     render() {
