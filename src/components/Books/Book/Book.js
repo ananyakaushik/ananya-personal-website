@@ -17,8 +17,10 @@ const Book = (props) => {
             <BookDesc
                 className={bookDescStyle}
                 title={props.title}
+                date={props.date}
                 author={props.author}
-                ratina={props.rating}
+                genre={props.genre}
+                rating={props.rating}
                 description={props.description} />
                 
             {props.id % 2 !== 0 && <BookImage />}

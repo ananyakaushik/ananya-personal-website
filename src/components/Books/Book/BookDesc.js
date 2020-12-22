@@ -8,9 +8,10 @@ const BookDesc = (props) => {
             <div className={classes.ListDiv}>
                 {/* List of Book's attributes */}
                 <ul>
-                    <li>Title: {props.title}</li>
+                    <li>Title: {props.title}, {props.date}</li>
                     <li>Author: {props.author}</li>
-                    <li>Goodreads Rating: {props.rating}</li>
+                    <li>Genre: {props.genre}</li>
+                    <li>Rating: {props.rating}</li>
                     <li>Synopsis: {props.description}</li>
                     <li>Review: </li>
                 </ul>
