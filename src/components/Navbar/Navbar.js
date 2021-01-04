@@ -10,7 +10,7 @@ import classes from './Navbar.module.css';
 class Navigation extends Component {
     render() {
         return(
-            <Navbar bg="white">
+            <Navbar className={classes.Navbar} bg="white">
                 <Navbar.Brand href="/" className={classes.NavbarBrand}>Ananya Kaushik</Navbar.Brand>
                 <Nav className="ml-auto">
                     <Nav.Link href="/" className={classes.NavLink}>Home</Nav.Link>
