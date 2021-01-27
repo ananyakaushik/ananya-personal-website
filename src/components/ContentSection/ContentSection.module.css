@@ -1,46 +1,33 @@
-.white {
-    background-color: #f7ede2;
-}
+/* 
+white: #f7ede2
+yellow: #f6bd60
+pink: #f5cac3
+*/
 
-.yellow {
-    background-color: #f6bd60;
-}
-
-.pink {
-    background-color: #f5cac3;
-}
- 
-.pDiv {
-    height: 100%;
-    width: 60%;
-    display: inline-flex;
-    justify-content: center;
-    vertical-align: middle;
-    color: #3b5952;
-    /* background-color: #f7ede2; */
-    background-color: white;
-}
-
-.section {
-    width: 60%;
+.contentsDiv {
     display: flex;
+    flex-direction: column;
+}
+
+.paraDiv {
+    display: inline-flex;
     align-items: center;
-    background-color: white;
+    color: #3b5952;
+}
+
+.paraText {
+    padding: 20% 10%;
 }
 
 .imgDiv {
-    height: 100%;
-    width: 40%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    vertical-align: middle;
     background-color: #f5cac3;
 }
 
-.sxsw {
+.profile {
     border-radius: 50%;
     width: 60%;
-    display: flex;
-    /* transform: translate(0,50%); */
+    padding: 20% 0;
 }
