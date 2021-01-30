@@ -1,51 +1,71 @@
+/* Style for each Row */
+
 .BookDiv {
-    height: 100%;
-    min-width: 100%
+    padding: 0 5%;
 }
+
+/* Style for each Column */
 
 .BookImg {
-    height: 100%;
-    width: 40%;
     display: inline-flex;
-    align-items: center; /* vertical within div */
+    align-items: flex-start; /* vertical within div */
     justify-content: center;
-    vertical-align: middle;
-    /* background-color: #f5cac3; */
+    padding: 10% 7%;
 }
+
+.BookDesc {
+    display: inline-flex;
+    justify-content: center;
+    padding: 10% 7%;
+}
+
+/* Style for inner HTML of Columns */
 
 .BookImg > img {
-    height: 500px;
-    display: flex;
-    padding: 0
-}
-
-.BookDescLeft {
-    height: 100%;
-    width: 44%;
-    display: inline-flex;
-    vertical-align: middle;
-    padding: 8%;
-}
-
-.BookDescRight {
-    height: 100%;
-    width: 60%;
-    display: inline-flex;
-    vertical-align: middle;
-    padding: 8% 0
+    width: 100%;
 }
 
 .ListDiv {
-    width: 60%;
-    display: flex;
-    vertical-align: middle;
-    align-items: center;
-    font-size: small;
+    justify-content: left;
+    font-size: 2vmin;
+    line-height: 3.5vh;
 }
 
 .ListDiv > ul {
     list-style: none!important;
-    /* display: inline-block; */
     text-align: initial;
     padding: 0
+}
+
+/* Media Queries - Mobile size */
+
+@media only screen and (max-width: 768px) {
+
+    /* Style for each Column */
+
+    .BookImg {
+        display: inline-flex;
+        align-items: flex-start; /* vertical within div */
+        justify-content: center;
+        margin: 10%;
+    }
+    
+    .BookDesc {
+        display: inline-flex;
+        justify-content: center;
+        margin: 8%
+    }
+
+    /* List div styles */
+
+    .ListDiv {
+        font-size: small;
+        line-height: 1.5rem;
+    }
+
+    .ListDiv > ul {
+        list-style: none!important;
+        text-align: center;
+        padding: 0
+    }
 }

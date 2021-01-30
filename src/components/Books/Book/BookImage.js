@@ -1,13 +1,14 @@
 import React from 'react';
+import {Col} from 'react-bootstrap';
 import plc from '../../../placeholder.png';
 import classes from './Book.module.css';
 
 // Component for the book's image
 const BookImage = (props) => {
     return(
-        <div className={classes.BookImg}>
+        <Col className={classes.BookImg} lg={4} md={4} >
             <img src={plc} alt="Name of Book" />
-        </div>
+        </Col>
     );
 }
 

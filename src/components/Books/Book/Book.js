@@ -1,4 +1,5 @@
 import React from 'react';
+import {Row} from 'react-bootstrap';
 import BookImage from './BookImage';
 import BookDesc from './BookDesc';
 import classes from './Book.module.css';
@@ -10,7 +11,7 @@ const Book = (props) => {
     const bookDescStyle = (props.id % 2 !== 0) ? classes.BookDescLeft : classes.BookDescRight;
 
     return(
-        <div className={classes.BookDiv}>
+        <Row className={classes.BookDiv}>
             {/* alternate the position of the book's image */}
             {props.id % 2 === 0 && <BookImage />}
 
@@ -24,7 +25,7 @@ const Book = (props) => {
                 description={props.description} />
                 
             {props.id % 2 !== 0 && <BookImage />}
-        </div>
+        </Row>
     )
 }
 

@@ -1,10 +1,11 @@
 import React from 'react';
+import {Col} from 'react-bootstrap';
 import classes from './Book.module.css';
 
 // Component for the description adjacent to the book's image
 const BookDesc = (props) => {
     return(
-        <div className={props.className}>
+        <Col className={classes.BookDesc} lg={8} md={8} >
             <div className={classes.ListDiv}>
                 {/* List of Book's attributes */}
                 <ul>
@@ -12,11 +13,11 @@ const BookDesc = (props) => {
                     <li>Author: {props.author}</li>
                     <li>Genre: {props.genre}</li>
                     <li>Rating: {props.rating}</li>
-                    <li>Synopsis: {props.description}</li>
-                    <li>Review: </li>
+                    <br />
+                    <li>{props.description}</li>
                 </ul>
             </div>
-        </div>
+        </Col>
     );
 }
 

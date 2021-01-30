@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import {Container} from 'react-bootstrap';
 import Navigation from '../Navbar/Navbar';
 import Book from './Book/Book';
+
+import classes from './Books.module.css';
 
 class Books extends Component {
     
@@ -96,18 +99,22 @@ class Books extends Component {
     render() {
         
         return(
-            <div style={{zIndex: 10, display: 'inline-block', height: '100%', width: '100%', alignContent: 'center', justifyContent:'center'}}>
+            <div className={`${classes.booksDiv} h-100`} >
                 <Navigation />
 
-                {/* List of Books */}
-                {/* If bookInfo state is populated, map Book array using info from API */}
-                {this.state.bookInfo && 
-                this.state.bookInfo
-                    // Sort if information fetched is out of order
-                    .sort((a, b) => a.id - b.id)
-                    .map(item => {
-                        return <Book key={item.id} {...item} />
-                    })}
+                <Container  className="h-100" fluid >
+
+                    {/* List of Books */}
+                    {/* If bookInfo state is populated, map Book array using info from API */}
+                    {this.state.bookInfo && 
+                    this.state.bookInfo
+                        // Sort if information fetched is out of order
+                        .sort((a, b) => a.id - b.id)
+                        .map(item => {
+                            return <Book key={item.id} {...item} />
+                        })}
+                
+                </Container>
 
             </div>
         )
