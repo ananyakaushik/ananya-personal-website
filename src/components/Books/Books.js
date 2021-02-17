@@ -46,7 +46,7 @@ class Books extends Component {
             "The Hunger Games": "9780545229937",
             "Six of Crows": "1627795227",
             "Circe": "1408890089",
-            "The Hate U Give": "0062498533",
+            "The Hate U Give": "006249855X", //"0062498533",
             "A Gathering of Shadows": "0765376474"
         };
 
@@ -75,7 +75,7 @@ class Books extends Component {
                 }
 
                 if (index === 3) {
-                    let desc = result.description.substring(488, (result.description.length-84));
+                    let desc = result.description.substring(531, (result.description.length-84));
                     result = {
                         ...result,
                         description: desc

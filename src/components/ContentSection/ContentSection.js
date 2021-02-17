@@ -12,7 +12,7 @@ class ContentSection extends Component {
 
         return (
             
-            <div className={`${classes.contentsDiv} vh-100`} h-100 >
+            <div className={`${classes.contentsDiv} vh-100`}>
                 <Navigation />
                 {/* Container for contents */}
                 <Container  className="h-100" fluid >
