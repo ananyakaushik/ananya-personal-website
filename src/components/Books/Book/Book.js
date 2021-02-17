@@ -16,7 +16,7 @@ const Book = (props) => {
 
             {/* alternate the position of the book's image */}
             <div>
-                <BookImage float={imgFloat}/>
+                <BookImage float={imgFloat} src={props.image} title={props.title}/>
                 <BookDesc
                     float={bookDescFloat}
                     title={props.title}

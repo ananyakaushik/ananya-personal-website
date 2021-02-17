@@ -30,7 +30,8 @@ class Books extends Component {
                     author: result.items[0].volumeInfo.authors[0],
                     genre: result.items[0].volumeInfo.categories[0],
                     rating: result.items[0].volumeInfo.averageRating,
-                    description: result.items[0].volumeInfo.description
+                    description: result.items[0].volumeInfo.description,
+                    image: result.items[0].volumeInfo.imageLinks.thumbnail
                 }
                 return book;
             })
@@ -55,6 +56,19 @@ class Books extends Component {
             let book;
             // Get book information
             this.getBookInfo(isbns[isbn]).then(result => {
+                
+                // Get image of better resolution
+                if (index !== 3) {
+                    let image = result.image.split("&");
+                    image[3] = "zoom=0";
+                    let newImage = image.join("&");
+
+                    result = {
+                        ...result,
+                        image: newImage
+                    }
+                }
+                
                 // Cut 3 book descriptions/title to only include pertinent information
                 if (index === 0) {
                     let desc = result.description.substring(473, result.description.length);
