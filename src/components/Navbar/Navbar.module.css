@@ -1,5 +1,5 @@
 .Navbar {
-    margin: 0 50px;
+    margin: 0 0 0 50px;
 }
 
 .NavbarBrand {
@@ -12,6 +12,18 @@
 .NavLink {
     color: #3b5952!important;
     width: 60%;
-    text-align: right;
     margin: 8px 30px;
+}
+
+/* Media Queries - Medium screen width */
+
+@media only screen and (max-width: 991px) {
+    .NavLink {
+        margin: 15px auto 15px 0;
+        text-align: left;
+    }
+
+    .Navbar {
+        margin: 25px;
+    }
 }

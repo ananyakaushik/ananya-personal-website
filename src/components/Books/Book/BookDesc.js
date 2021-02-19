@@ -5,7 +5,7 @@ import classes from './Book.module.css';
 // Component for the description adjacent to the book's image
 const BookDesc = (props) => {
     return(
-        <Col className={`${classes.BookDesc} ${props.float}`} lg={8} md={8} >
+        <Col className={`${classes.BookDesc} ${props.float}`} lg={8} >
             <div className={classes.ListDiv}>
                 {/* List of Book's attributes */}
                 <ul>

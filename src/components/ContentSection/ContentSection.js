@@ -19,12 +19,12 @@ class ContentSection extends Component {
                     <Row className="h-100" >
 
                         {/* 'Profile picture' of website */}
-                        <Col className={classes.imgDiv} lg={5} md={5} >
+                        <Col className={classes.imgDiv} lg={5} >
                             <img className={classes.profile} src={ananyaSXSW} alt="Ananya Kaushik" />
                         </Col>
 
                         {/* Intro text */}
-                        <Col className={classes.paraDiv} lg={7} md={7} >
+                        <Col className={classes.paraDiv} lg={7} >
                             <p className={classes.paraText}>
                                 Hi! I'm Ananya Kaushik. This is my website, where I'm practicing my frontend skills, primarily React.js and some CSS.
                             </p>

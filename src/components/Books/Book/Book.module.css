@@ -41,14 +41,14 @@
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
-/* Media Queries - Mobile size */
+/* Media Queries - Medium screen width */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
 
     /* Style for each Column */
 
     .BookImg {
-        padding: 25% 15% 15%;
+        padding: 25% 20% 15%;
     }
     
     .BookDesc {
@@ -58,13 +58,25 @@
     /* List div styles */
 
     .ListDiv {
-        font-size: small;
-        line-height: 1.5rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
 
     .ListDiv > ul {
         list-style: none!important;
         text-align: justify;
         padding: 0
+    }
+}
+
+/* Media Queries - Small screen width */
+
+@media only screen and (max-width: 767px) {
+
+    /* List div styles */
+
+    .ListDiv {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
     }
 }
