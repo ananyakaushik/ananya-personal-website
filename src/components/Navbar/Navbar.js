@@ -13,7 +13,7 @@ class Navigation extends Component {
                 <Navbar.Collapse id="basic-navbar-nav" >
                     <Nav className="ml-auto">
                         <Nav.Link href="/books" className={classes.NavLink}>Books</Nav.Link>
-                        <Nav.Link href="/about" className={classes.NavLink}>About</Nav.Link>
+                        <Nav.Link href="/career" className={classes.NavLink}>Career</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
